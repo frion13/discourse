@@ -97,7 +97,12 @@ function multiply(a, b) {
   }
   
 function divide(a, b) {
-    return a / b;
+    if (b===0) {
+        console.log('На ноль делить нельзя')
+        
+    }
+     return a / b;
+ 
   }
   
 
@@ -105,7 +110,7 @@ function divide(a, b) {
   console.log(subtract(2,5));
   console.log(subtract(3, 3));
   console.log(multiply(3, 3));
-  console.log(divide(3, 4));
+  console.log(divide(3, 0));
   
   
   
